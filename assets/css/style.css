@@ -1,0 +1,50 @@
+body {
+    background-image: url("../images/morocco-blue.png");
+    color: #777777;
+}
+
+.gameTitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 280px;
+    background-color: darkgoldenrod;
+}
+
+.main {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    width: 960px;
+    border: 2px solid #dddddd;
+    margin-top: 25px;
+}
+
+.winNum {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:green;
+    width: 200px;
+    border-bottom: 40px;
+    font-size: 1cm;
+    
+}
+
+.count {
+    color: black;
+    background-color: aqua;
+    border-bottom: 5px;
+    width: 100px;
+
+}
+
+.yourScore {
+    color: white;
+    background-color: teal;
+    width: 200px;
+}
+.score {
+    color: white;
+    background-color: teal;
+    width: 200px;
+    font-size: 1cm;
+}
