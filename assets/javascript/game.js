@@ -35,8 +35,7 @@ $('#winNum').text(winNum);
 var buttonPurple = {
     getValue: function () {
         this.value = Math.floor(Math.random() * Math.floor(12));
-        console.log(this);
-        
+        console.log(this);    
     }
 }
 var buttonPink = {

@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class= "gameTitle">
-    <h1>Crystal Collector!</h1>
+    <div class="gameTitle">
+        <h1>Crystal Collector!</h1>
     </div>
 
     <div class="main">
 
-    <p style="line-height: 2;">
-        
-        You will be given a random number at the start of the game. 
+        <p style="line-height: 2;">
+
+            You will be given a random number at the start of the game.
+            <br>
+            There are four crystals below. By clicking the crystal you will add a specific amoun of points to your total
+            score.
+            <br>
+            You will win the game by matching your total score to the random number, you lose the game if your total
+            score goes above the random number.
+            <br>
+            The value of each crystal is hidden from you until you click on it.
+            <br>
+            Each time when the game starts, the game will change the values of each crystal.
+        </p>
+
+
+        Number: <span id="winNum"></span>
+
+        <div class="count">
+            <span class="Wins">
+                Wins:
+            </span>
+            <br>
+            <br>
+            <span class="Losses">
+                Losses:
+            </span>
+
+        </div>
         <br>
-There are four crystals below. By clicking th crystal you will add a specific amoun of points to your total score.
-<br>
-You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.
-<br>
-The value of each crystal is hidden from you until you click on it.
-<br>
-Each time when the game starts, the game will change the values of each crystal.
-</p>
 
+        <div class="buttons">
+            <span id="buttonPurple">
+                <img src="assets/images/purple.jpg" alt="purple crystal"
+                    style="width:150px;height:150px; float: left; padding:10px">
+            </span>
+            <span id="buttonPink">
+                <img src="assets/images/pink.jpg" alt="pink crystal"
+                    style="width:150px;height:150px; float: left; padding:10px">
+            </span>
+            <span id="buttonBlue">
+                <img src="assets/images/Kinetic_Crystal.jpg" alt="blue crystal"
+                    style="width:150px;height:150px; float: left; padding:10px">
+            </span>
+            <span id="buttonRed">
+                <img src="assets/images/red.jpg" alt="red crystal"
+                    style="width:150px;height:150px; float: left; padding:10px">
+            </span>
+        </div>
 
-Number: <span id="winNum"></span>
+        <div class="yourScore">
+            Your Score is:
+        </div>
 
-<div class="count">
-    <span class="Wins">
-        Wins:
-    </span>
-    <br>
-    <br>
-        <span class= "Losses">
-            Losses:
-        </span>
-
-</div>
-<br>
-
-<div class= "buttons">
- <span id= "buttonPurple">
-     <img src="assets/images/purple.jpg" alt="purple crystal" style="width:150px;height:150px; float: left; padding:10px">
- </span>
- <span id= "buttonPink">
-        <img src="assets/images/pink.jpg" alt="pink crystal" style="width:150px;height:150px; float: left; padding:10px">
-    </span> 
-    <span id= "buttonBlue">
-            <img src="assets/images/Kinetic_Crystal.jpg" alt="blue crystal" style="width:150px;height:150px; float: left; padding:10px">
-    </span> 
-    <span id= "buttonRed">
-            <img src="assets/images/red.jpg" alt="red crystal" style="width:150px;height:150px; float: left; padding:10px">
-    </span>
-</div>
-
-<div class="yourScore">
-Your Score is:
-</div>
-
-<div class="score">
-        0
+        <div class="score">
+            0
         </div>
 
 
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
